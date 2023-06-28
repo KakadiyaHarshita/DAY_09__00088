@@ -1,0 +1,22 @@
+<title>confirmation</title>
+
+<html>
+  <head>
+        <script type="text/javascript">
+            function isConfirmed() {
+                let conVal = confirm("Are you ready to confirm?");
+                if (conVal == true) {
+                    document.getElementById("result").innerHTML = "Confirmed !";
+                } else {
+                    document.getElementById("result").innerHTML = "Cancelled !";
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <form>
+        <input type="button" onclick="isConfirmed()" value="Want to confirm ?" />
+    </form>
+    <p id="result"></p>
+  </body>
+</html> 
